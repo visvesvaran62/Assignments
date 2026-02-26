@@ -4,7 +4,9 @@
 // for(let i=0;i<arr1.length;i++){
 //     console.log("the numbers are:",arr1[i]);   
 // }
-// // 
+// //
+
+// day-------2
 // let num=[1,2,3,4,5,6,7,8,9,10];
 // for(let i=0;i<num.length;i++){
 //     if(num[i]% 2===0){
@@ -13,36 +15,35 @@
 // }
 
 
-// DAY-------2
+// DAY-------3
+
 let ar1=[1,2,3,4,5]
-let sumvalue=""
-for(let i=1;i<ar1.length;i++){
+let sumvalue=0;
+for(let i=0;i < ar1.length;i++){
 
-  sumvalue+=
+  sumvalue+=ar1[i]
 }
+console.log("sum value is :",sumvalue);
 
 
 
 
+// const outer = ()=>{
+
+//   let count = 0;
+
+//   return ()=>{
+//     count++
+
+//     return count
+
+//   }
 
 
-
-const outer = ()=>{
-
-  let count = 0;
-
-  return ()=>{
-    count++
-
-    return count
-
-  }
+// }
 
 
-}
-
-
-const data = outer()
+// const data = outer()
 
 
 // console.log(data());
