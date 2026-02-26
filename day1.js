@@ -15,7 +15,7 @@
 // String,boolean,Number,null
 
 // 5. types of primitive datatypes:
-// String,number,boolean,null,undefind.
+// String,number,boolean,null,undefind
 
 
 //  6.non-primitive datatypes:
