@@ -32,6 +32,28 @@ console.log("sum value is :",sumvalue);
 
 
 
+// day--------4
+
+
+let number=[10,20,30,40,50]
+for(let i=number.length-1;i>=0;i--){
+  console.log("reverse array is :",number[i]);
+  
+}
+
+
+let x=5;
+for(let i=1;i<=x;i++){
+  let row=""
+  for(let j=1;j<=i;j++){
+    row=row+"*";
+  }
+  console.log(row);
+  
+}
+
+
+
 
 // const outer = ()=>{
 
