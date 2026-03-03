@@ -1,0 +1,105 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><i> Counter Program</i></h1>
+    <h1 id="nt">0</h1>
+    <div>
+        <button id="increase">increase</button>
+        <button id="des">decrease</button>
+        <button id="res">reset</button>
+    </div>
+
+ <script>
+    let cnt=document.getElementById("nt")
+    let increase=document.getElementById("increase")
+    let decrease=document.getElementById("des")
+    let res=document.getElementById("res")
+
+let count=0;
+increase.addEventListener("click",()=>{
+    count++
+    nt.textContent=count
+})
+
+decrease.addEventListener("click",()=>{
+    count--;
+    nt.textContent=count
+})
+res.addEventListener("click",()=>{
+    nt.textContent=0
+})
+
+
+ </script>   
+</body>
+</html> -->
+
+
+<label for="value">enter your value</label>
+<input id="txt" type="text">
+<button id="btn">add</button>
+<ul id="list"></ul>
+
+<script>
+    const newtext = document.getElementById("txt");
+    const adding = document.getElementById("btn");
+    const list = document.getElementById("list");
+
+    adding.addEventListener("click", () => {
+
+        const value = newtext.value;
+
+        if (value.trim() === "") return;
+
+        const li = document.createElement("li");
+        li.textContent = value;
+
+        const debtn = document.createElement("button");
+        debtn.textContent = " delete";
+
+        debtn.addEventListener("click", () => {
+            li.remove();   
+        });
+
+        li.appendChild(debtn);  
+        list.appendChild(li);   
+
+        newtext.value = "";
+    });
+</script>
+
+
+<form id="myForm">
+    <label>Username:</label>
+    <input type="text" id="username">
+    <button type="submit">Submit</button>
+    <p id="message"></p>
+</form>
+
+<script>
+    const form = document.getElementById("myForm");
+    const username = document.getElementById("username");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function(e) {
+
+        e.preventDefault(); 
+
+        if (username.value.trim() === "") {
+            message.textContent = "Username cannot be empty";
+            message.style.color = "red";
+        } else {
+            message.textContent = "Form submitted successfully!";
+            message.style.color = "green";
+        }
+
+    });
+</script>
+
+
+
