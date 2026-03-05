@@ -1,0 +1,36 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.navbar{
+  height:150px;
+  width:100%;
+  background-color: rgb(233, 200, 91);
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+.posters{
+   display: flex;
+  justify-content: center;   /* centers horizontally */
+  align-items: center;       /* centers vertically (if height given) */
+  gap: 20px;                 /* space between images */
+  margin-top: 20px;
+
+  
+}
+img{
+   width: 150px;
+  height: 200px;
+  border-radius: 15px;       /* rounded corners */
+  object-fit: cover; 
+}
+.about{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 50px;
+}
